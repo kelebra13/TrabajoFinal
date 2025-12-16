@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Galería - Mi Portafolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MiPortafolio</a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Sobre mí</a></li>
+          <li><a href="gallery.html">Galería</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="gallery-intro">
+      <h1>Galería</h1>
+      <p>Ejemplos de trabajos — haz clic para ampliar.</p>
+      <div class="filters">
+        <button data-filter="all" class="active">Todos</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="design">Diseño</button>
+      </div>
+    </section>
+
+    <section class="gallery-grid" id="gallery">
+      <article class="gallery-item" data-category="web" id="img1">
+        <img src="assets/images/img1.jpg" alt="Proyecto 1">
+        <h3>Proyecto Web 1</h3>
+      </article>
+      <article class="gallery-item" data-category="design" id="img2">
+        <img src="assets/images/img2.jpg" alt="Proyecto 2">
+        <h3>Diseño 1</h3>
+      </article>
+      <article class="gallery-item" data-category="web" id="img3">
+        <img src="assets/images/img3.jpg" alt="Proyecto 3">
+        <h3>Proyecto Web 2</h3>
+      </article>
+      <article class="gallery-item" data-category="design" id="img4">
+        <img src="assets/images/img4.jpg" alt="Proyecto 4">
+        <h3>Diseño 2</h3>
+      </article>
+      <article class="gallery-item" data-category="web" id="img5">
+        <img src="assets/images/img5.jpg" alt="Proyecto 5">
+        <h3>Proyecto Web 3</h3>
+      </article>
+      <article class="gallery-item" data-category="design" id="img6">
+        <img src="assets/images/img6.jpg" alt="Proyecto 6">
+        <h3>Diseño 3</h3>
+      </article>
+    </section>
+  </main>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-3"></span> MiPortafolio</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mi Portafolio - Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MiPortafolio</a>
+
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Sobre mí</a></li>
+          <li><a href="gallery.html">Galería</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="greeting">Hola — Bienvenido</h1>
+          <p class="lead">Soy Yirmy Herrera, desarrollador web — este es un portafolio que demuestra HTML semántico, CSS y JavaScript.</p>
+          <p><a class="btn" href="gallery.html">Ver Galería</a> <a class="btn btn-outline" href="contact.html">Contactarme</a></p>
+        </div>
+        <figure class="hero-image" aria-hidden="true">
+          <img src="assets/images/img1.jpg" alt="Imagen representativa" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h2>Proyectos</h2>
+        <p>Proyectos y prácticas del curso.</p>
+      </article>
+      <article>
+        <h2>Tecnologías</h2>
+        <p>HTML5 · CSS3 · JavaScript · Responsive · Accesibilidad</p>
+      </article>
+      <article>
+        <h2>Contacto</h2>
+        <p>Formulario con validación y confirmación dinámica.</p>
+      </article>
+    </section>
+
+    <section class="preview container">
+      <h2>Últimos trabajos</h2>
+      <div class="preview-grid">
+        <a class="card" href="gallery.html#img1">
+          <img src="assets/images/img2.jpg" alt="Trabajo 1">
+          <div class="card-body"><h3>Trabajo 1</h3><p>Mini descripción</p></div>
+        </a>
+        <a class="card" href="gallery.html#img2">
+          <img src="assets/images/img3.jpg" alt="Trabajo 2">
+          <div class="card-body"><h3>Trabajo 2</h3><p>Mini descripción</p></div>
+        </a>
+        <a class="card" href="gallery.html#img3">
+          <img src="assets/images/img4.jpg" alt="Trabajo 3">
+          <div class="card-body"><h3>Trabajo 3</h3><p>Mini descripción</p></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> MiPortafolio — Hecho con amor</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

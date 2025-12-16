@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sobre mí - Mi Portafolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MiPortafolio</a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Sobre mí</a></li>
+          <li><a href="gallery.html">Galería</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-intro">
+      <h1>Sobre mí</h1>
+      <p>Soy Yirmy Herrera, desarrollador frontend y backend en formación. Aquí presento mi experiencia, habilidades y trayectoria.</p>
+    </section>
+
+    <section class="timeline">
+      <h2>Línea del tiempo</h2>
+      <ol>
+        <li><strong>Sep - 2025</strong> - Comienzo del curso y primeros proyectos.</li>
+        <li><strong>Dic - 2025</strong> - Desarrollo de portafolio y prácticas con JS.</li>
+      </ol>
+    </section>
+
+    <section class="skills">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>HTML &amp; Semántica</h3>
+          <div class="progress" data-value="90"><span style="width:95%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>CSS &amp; Responsivo</h3>
+          <div class="progress" data-value="85"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="progress" data-value="75"><span style="width:75%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>C#</h3>
+          <div class="progress" data-value="95"><span style="width:95%"></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-2"></span> MiPortafolio</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
