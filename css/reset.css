@@ -1,0 +1,125 @@
+/* ================================
+   CSS RESET MODERNO
+   ================================ */
+
+/* 1. Box sizing consistente */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Evita scroll horizontal accidental */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 3. Ajustes base */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+/* 4. Body base */
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+               "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  background-color: #fff;
+  color: #000;
+}
+
+/* 5. Elimina estilos por defecto */
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Imágenes y medios */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Formularios */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* 8. Botones */
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+/* 9. Inputs */
+textarea {
+  resize: vertical;
+}
+
+/* 10. Tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 11. Tipografía */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+p, span, label {
+  font-weight: normal;
+}
+
+/* 12. Evita overflow de textos largos */
+p,
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 13. Elementos interactivos */
+a, button, input, textarea, select {
+  touch-action: manipulation;
+}
+
+/* 14. Accesibilidad */
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* 15. Reduce animaciones si el usuario lo pide */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
